@@ -1,66 +1,56 @@
 import Head from 'next/head'
+import Link from 'next/link'
 
 export default function Home() {
   return (
-    <div className="container">
+    <div>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-
+        <title>Login Page</title>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet"></link>
-
       </Head>
 
       <main>
+        <div className = "top">
         <h1 className="title">
-          Virtual <a href="https://nextjs.org">Seoul</a>
+          Virtual <a>Seoul</a>
         </h1>
 
         <p className="description">
-          Get started by editing <code>pages/index.js</code>
+        Content Managmant System
+        </p>
+
+        </div>
+
+        <p className="info">
+        서울관광재단이 발급한 아이디와 비밀번호로 로그인 해주세요.
         </p>
 
         <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+          <div className="card">
+            <h3>Login &rarr;</h3>
+            <br/>
 
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="card"
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="card"
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+            <input className="input_login" type="text" placeholder = "ID"></input>
+            <input className="input_login" type="password" placeholder = "PW"></input>
+            <br/>
+            <input className="remember_checkbox" type="checkbox"  id = "Remember" name="Remember"></input>
+            <label className= "Remember" for="Remember">아이디 기억하기</label>
+            <br/>
+            <br/>
+            <input className="submit_login" type="button" value = "Submit"></input>
+            
+          </div>
         </div>
+
+        <p className="forget">
+        비밀번호를 잃어버리신 경우 서울관광재단으로 연락주세요.
+        <br/>
+        vsp@sto.or.kr
+        </p>
+
       </main>
 
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel" className="logo" />
-        </a>
-      </footer>
+      <footer/>
 
       <style jsx>{`
         .container {
@@ -73,12 +63,58 @@ export default function Home() {
         }
 
         main {
+          font-family: 'Noto Sans KR', sans-serif;
           padding: 5rem 0;
           flex: 1;
           display: flex;
           flex-direction: column;
           justify-content: center;
-          align-items: center;
+          
+        }
+
+        .input_login {
+          border: 2px solid #C0C0C5;
+          box-sizing: border-box;
+          border-radius: 2px;
+          width: 260px;
+          height: 40px;
+          margin : 5px;
+          padding : 10px;
+          font-family: 'Noto Sans KR', sans-serif;
+          font-size: 13px;
+          line-height: 22px;
+        }
+
+        .input_login:hover,
+        .input_login:focus,
+        .input_login:active {
+          color: #0070f3;
+          border-color: #0070f3;
+        }
+
+        .remember_checkbox {
+          border: 0.98604px solid #C4C4C4;
+          box-sizing: border-box;
+          border-radius: 2px;
+        }
+
+        .submit_login {
+          width: 260px;
+          height: 40px;
+          margin : 5px;
+          padding : 10px;
+          
+          background: #252525;
+          border-radius: 1.97208px;
+
+          color : #ffffff;
+        }
+
+        .submit_login:hover,
+        .submit_login:focus,
+        .submit_login:active {
+          border-color: #0070f3;
+          background : #0070f3;
         }
 
         footer {
@@ -90,19 +126,8 @@ export default function Home() {
           align-items: center;
         }
 
-        footer img {
-          margin-left: 0.5rem;
-        }
-
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        a {
-          color: inherit;
-          text-decoration: none;
+        .top {
+          background-color : #ededed;
         }
 
         .title a {
@@ -110,16 +135,10 @@ export default function Home() {
           text-decoration: none;
         }
 
-        .title a:hover,
-        .title a:focus,
-        .title a:active {
-          text-decoration: underline;
-        }
-
         .title {
-          margin: 0;
-          line-height: 1.15;
-          font-size: 4rem;
+          margin: 10;
+          line-height: 1.5;
+          font-size: 4.5rem;
         }
 
         .title,
@@ -132,13 +151,16 @@ export default function Home() {
           font-size: 1.5rem;
         }
 
-        code {
-          background: #fafafa;
-          border-radius: 5px;
-          padding: 0.75rem;
-          font-size: 1.1rem;
-          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+        .info {
+          text-align: center;
+          line-height: 5;
+          font-size: 1.2rem;
+        }
+
+        .forget {
+          text-align: center;
+          line-height: ;
+          font-size: 0.8rem;
         }
 
         .grid {
@@ -146,21 +168,21 @@ export default function Home() {
           align-items: center;
           justify-content: center;
           flex-wrap: wrap;
-
-          max-width: 800px;
-          margin-top: 3rem;
         }
 
         .card {
+          width : 380px;
+
           margin: 1rem;
-          flex-basis: 45%;
-          padding: 1.5rem;
-          text-align: left;
+
+          padding: 3rem;
+          text-align: ;
           color: inherit;
           text-decoration: none;
-          border: 1px solid #eaeaea;
-          border-radius: 10px;
+          border: 2px solid #eaeaea;
+          border-radius: 2px;
           transition: color 0.15s ease, border-color 0.15s ease;
+          
         }
 
         .card:hover,
@@ -180,17 +202,6 @@ export default function Home() {
           font-size: 1.25rem;
           line-height: 1.5;
         }
-
-        .logo {
-          height: 1em;
-        }
-
-        @media (max-width: 600px) {
-          .grid {
-            width: 100%;
-            flex-direction: column;
-          }
-        }
       `}</style>
 
       <style jsx global>{`
@@ -198,11 +209,8 @@ export default function Home() {
         body {
           padding: 0;
           margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
+          font-family: 'Noto Sans KR', sans-serif;
         }
-
         * {
           box-sizing: border-box;
         }
