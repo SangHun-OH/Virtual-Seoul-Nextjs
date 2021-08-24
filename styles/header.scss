@@ -1,0 +1,37 @@
+
+
+.header-container{
+    padding: 10px 20px;
+    background-color: #ddd;
+    border-top: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
+    display: flex;
+    
+    justify-content:space-between;
+
+    .header-logo{
+        font-size: 30px;
+        font-weight: 600;
+        color: #fff;
+    }
+    
+    .header-title{
+        font-size: 60px;
+        font-weight: 700;
+        color: #fff;
+    }
+    
+    .header-menu{
+        font-weight: 600;
+        color: #fff;
+        a{
+            display: inline-block;
+            font-weight: 600;
+            color: #fff;
+            text-decoration:none;
+            margin: 30% 5px 0 5px;
+        }
+    }
+
+    
+}
