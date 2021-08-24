@@ -16,7 +16,7 @@ export default function Home() {
         </h1>
 
         <p className="description">
-        Content Managmant System
+        Content Managemant System
         </p>
 
         </div>
