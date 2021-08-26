@@ -10,7 +10,6 @@ export default function Home() {
       </Head>
 
       <main>
-
         <h2 className="info_list">
           Attendee List
           <input className="csv_button" type="button" value = "CSV 다운로드"></input>
