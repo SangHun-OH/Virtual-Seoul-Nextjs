@@ -20,7 +20,6 @@ const Nav = () => {
 
             <hr></hr>
 
-
         </div>
     );
 
