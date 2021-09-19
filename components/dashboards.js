@@ -55,7 +55,6 @@ export default function Home() {
           </div>
           
         </div>
-
         <h2 className="info_list">
           Business Matching
         </h2>
