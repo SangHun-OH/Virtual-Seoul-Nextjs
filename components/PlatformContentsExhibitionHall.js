@@ -13,6 +13,7 @@ const PlatformContentsExhibitionHall = () => {
     "⑧ 오른쪽 배너 4",
   ];
 
+  
   const videoTitle = ["① 홍보영상", "② 주최측부스 영상1", "③ 주최측부스 영상2"];
 
   return (
