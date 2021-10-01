@@ -15,8 +15,12 @@ const Header = () => {
                 |
                 <Link href='#'><a>Logout</a></Link>                
             </div>
+                <div className="header-logout">
+                LOG OUT
+            </div>
         </div>
     );
 }
+
 
 export default Header;
