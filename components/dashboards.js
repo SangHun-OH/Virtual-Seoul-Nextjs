@@ -15,8 +15,6 @@ export default function Home() {
           <input className="csv_button" type="button" value = "CSV 다운로드"></input>
         </h2>
 
-
-
         <div className="grid">
           <div className="card_attendee">
             <h3>일반 참가자</h3>
