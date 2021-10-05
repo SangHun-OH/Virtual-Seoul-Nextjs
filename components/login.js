@@ -71,6 +71,7 @@ const Login = () => {
 
         </div>
 
+    
         <p className="info">
           서울관광재단이 발급한 아이디와 비밀번호로 로그인 해주세요.
         </p>
