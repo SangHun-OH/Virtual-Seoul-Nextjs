@@ -149,6 +149,7 @@ const VirtualVenue = ({ onChecked, checkBox }) => {
           venues={venues[i]}
           functions={functions[i]}
           onChecked={onChecked}
+
           checkBox={checkBox}
         ></TableBody>
       );
