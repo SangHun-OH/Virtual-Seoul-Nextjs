@@ -15,7 +15,6 @@ const AttendeesNormal = () => {
   ];
 
   const [offset, setOffset] = useState(0);
-
   const totalCount = 28;
   const limit = 4;
 
