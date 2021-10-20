@@ -13,7 +13,6 @@ const AttendeesSpeaker = () => {
     "photo",
   ];
 
-  
   const [offset, setOffset] = useState(0);
 
   const totalCount = 28;
